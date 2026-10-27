@@ -1,0 +1,70 @@
+kuzin@Festyy UCRT64 ~/projects/TASK_1 (q2)
+$ notepad commands.txt
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ grep -rl "Earl Grey" .
+./2022/sklad/nakladnaya_0002.txt
+./2023/sklad/nakladnaya_0005.txt
+./2024/sklad/otchet_0010.txt
+./2025/buhgalteriya/otchet_0015.txt
+./2025/sklad/pismo_0014.txt
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ pwd
+/c/Users/kuzin/projects/TASK_1/archive
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ grep -ril "CODE:" .
+./2022/prodazhi/dogovor_0004.txt
+./2023/buhgalteriya/schet_0007.txt
+./2024/kadry/dogovor_0012.txt
+./2024/sklad/otchet_0010.txt
+./2025/buhgalteriya/otchet_0015.txt
+./2025/kadry/otchet_0013.txt
+./2025/sklad/pismo_0014.txt
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ ^C
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ grep -ril "HINT-1" .
+./2023/sklad/nakladnaya_0005.txt
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ ^C
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ grep -r "HINT-1" .
+./2023/sklad/nakladnaya_0005.txt:HINT-1: Привет, стажёр! Вторая подсказка лежит рядом со словом kladovshik.
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ grep -r "kladovshik" .
+./2023/sklad/nakladnaya_0005.txt:HINT-1: Привет, стажёр! Вторая подсказка лежит рядом со словом kladovshik.
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ grep -ri "kladovshik" .
+./2023/sklad/nakladnaya_0005.txt:HINT-1: Привет, стажёр! Вторая подсказка лежит рядом со словом kladovshik.
+./2024/prodazhi/pismo_0009.txt:kLaDoVsHiK передал: кодовое слово лежит в годовом отчёте бухгалтерии за 2025 год — 2025/buhgalteriya/otchet_0015.txt
+./2024/sklad/otchet_0010.txt:- Замечания: KLADOVSHIK Петров ушёл на обед, вернётся через час.
+./2025/sklad/pismo_0014.txt:Kladovshik просит не трогать стеллаж №4 — он шатается.
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ $ grep -ri " стеллаж №4" .
+bash: $: command not found
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$  grep -ri "стеллаж №4" .
+./2025/sklad/pismo_0014.txt:Kladovshik просит не трогать стеллаж №4 — он шатается.
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ grep "CODE" 2025/buhgalteriya/otchet_0015.txt
+CODE: UTYUG
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ echo "UTYUG
+" > answer.txt
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$ echo "UTYUG" > answer.txt
+
+kuzin@Festyy UCRT64 ~/projects/TASK_1/archive (q2)
+$
